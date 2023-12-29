@@ -1,0 +1,5 @@
+# fisiere care nu trebuie sa fie in git
+.env
+
+# foldere care nu trebuie sa fie in git
+node_modules/
