@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 
-   <head>
+<head>
    <meta charset="UTF-8">
-<title>Titlul paginii</title>
-   </head> 
+   <meta name="description" content="HTML Fundamentals">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HTML Fundamentals</title>
+   <link rel="stylesheet" href="./style.css">
+   <style>
+    body {
+      background-color: #f3cd03;
+    }
+
+    input {
+      color: red;
+    }
+   </style>
+</head>
+
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <path
+    d="M5.0319 12.1308L3.66522 18.0488C3.6229 18.228 3.63561 18.4158 3.70168 18.5877C3.76775 18.7596 3.99"
+    fill="#f3cd03" />
+  </svg>
 
-    <!--#image - link spre un element care are id image -->
-    <a href="#image">Image</a>
+<!--Inputs-->
+<form action="">
+   <label for="username">Username:</label><br />
+  <input style="color: yellow;" type="text" placeholder="Write your name" name="username">
+  <br />
 
-    <!--Headings-->
-   <h1>Heading H1</h1>
-   <h2>Heading H2</h2> 
-   <h3>Heading H3</h3>  
-   <h4>Heading H4</h4> 
-   <h5>Heading H5</h5>
-   <h6>Heading H6</h6>
+  <label for="email">Email:</label><br />
+  <input type="email" placeholder="Fill in your email" name="email">
+<br />
 
-   <!-- Paragrafele -->
-   <p>Aceasta este un paragraf</p>
-   <!-- Text bold -->
-   <strong>Aici textul este bold</strong>
-   <br>
-   <!-- Text cursiv -->
-   <em> Aici este text italic</em>
-   <br>
+  <label for="password">Password:</label><br />
+  <input type="password" placeholder="Write a password" name="password">
 
-   <!-- Liste neordonate (cu puncte) -->
-   <ul>
-    <li>Elementul 1</li>
-    <li>Elementul 2</li>
-    <li>Elementul 3</li>
-   </ul>
+  <br />
 
-   <!-- Liste orodonate (cu numere) -->
-   <ol>
-    <li>Elementul 1</li>
-    <li>Elementul 2</li>
-    <li>Elementul 3</li>
-   </ol>
+  <div class="section-buttons" style="background-color: aqua;">
+      <input type="radio" name="angajare" value="angajat"> Angajat<br>
+      <input type="radio" name="angajare" value="neangajat"> Neangajat<br>
+      <input type="radio" name="angajare" value="pensionar"> Pensionar<br>
+  </div>
 
-   <img id="image" alt="audi rs7" width="150" 
-   src="./image/audi rs7.jpg"/> 
+  <section>
+     <input type="checkbox" name="company 1" value="Starnet">Starnet<br>
+     <input type="checkbox" name="company 2" value="Moldtelecom">Moldtelecom<br>
+     <input type="checkbox" name="company 3" value="Orange">Orange<br>
+  </section>
 
-   <br> 
-   <!--Li nk sau hyperlink-->
-   <a href="https://www.youtube.com/" target="_blank">youtube</a>
 
-   <br>
-   <table>
-      <thead>
-        <tr>
-          <th colspan="1">Numele,prenumele</th>
-          <th colspan="1">Adresa domiciliu</th>
-        </tr> 
-      </thead>
-      <tbody>
-        <tr>
-          <td>Dumitru</td>
-          <td>Riscani</td>
-        </tr>
-          <tr>
-          <td>Alexei</td>
-          <td>Riscani</td>
-        </tr>
-      </tbody>
-    </table>
+  <!--Select - dropdown-->
+  <label for="age">Choose age</label><br>
+  <select name="age">
+   <option value="18-25">18-25</option>
+   <option value="25-35">25-35</option>
+   <option value="35-45">35-45</option>
+   <option value="45-55">45-55</option>
+   <option value="55-65">55-65</option>
+  </select>
+  <br>
 
+    <textarea name="paragraf" rows="5" cols="50"></textarea>
+
+  <input type="submit" value="Sign in" />
+</form>
 </body>
 
 </html>
