@@ -6,68 +6,38 @@
    <meta name="description" content="HTML Fundamentals">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>HTML Fundamentals</title>
-   <link rel="stylesheet" href="./style.css">
-   <style>
-    body {
-      background-color: #f3cd03;
-    }
-
-    input {
-      color: red;
-    }
-   </style>
+   <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-    <path
-    d="M5.0319 12.1308L3.66522 18.0488C3.6229 18.228 3.63561 18.4158 3.70168 18.5877C3.76775 18.7596 3.99"
-    fill="#f3cd03" />
-  </svg>
-
-<!--Inputs-->
+  <section id="form-section">
+<!-- Inputs -->
 <form action="">
-   <label for="username">Username:</label><br />
-  <input style="color: yellow;" type="text" placeholder="Write your name" name="username">
-  <br />
+       <label for="username">Username:</label><br />
+       <input type="text" placeholder="Write your name" name="username">
+       <br />
 
-  <label for="email">Email:</label><br />
-  <input type="email" placeholder="Fill in your email" name="email">
-<br />
+       <label for="email">Email:</label><br />
+       <input type="email" placeholder="Fill in your email" name="email">
+       <br />
 
-  <label for="password">Password:</label><br />
-  <input type="password" placeholder="Write a password" name="password">
-
-  <br />
-
-  <div class="section-buttons" style="background-color: aqua;">
-      <input type="radio" name="angajare" value="angajat"> Angajat<br>
-      <input type="radio" name="angajare" value="neangajat"> Neangajat<br>
-      <input type="radio" name="angajare" value="pensionar"> Pensionar<br>
-  </div>
-
-  <section>
-     <input type="checkbox" name="company 1" value="Starnet">Starnet<br>
-     <input type="checkbox" name="company 2" value="Moldtelecom">Moldtelecom<br>
-     <input type="checkbox" name="company 3" value="Orange">Orange<br>
+       <label for="password">Password:</label><br />
+       <input type="password" placeholder="Write a password" name="password">
+       <br />
+       <br />
+       <!-- <input type="submit" class="submit-button" value="Sign in" /> -->
+       <button type="submit" class="submit-button">Sign in</button>
+     </form>
   </section>
 
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+    <li>Fourth item</li>
+  </ul>
 
-  <!--Select - dropdown-->
-  <label for="age">Choose age</label><br>
-  <select name="age">
-   <option value="18-25">18-25</option>
-   <option value="25-35">25-35</option>
-   <option value="35-45">35-45</option>
-   <option value="45-55">45-55</option>
-   <option value="55-65">55-65</option>
-  </select>
-  <br>
-
-    <textarea name="paragraf" rows="5" cols="50"></textarea>
-
-  <input type="submit" value="Sign in" />
-</form>
+     <label for="username">Username: </label>  
 </body>
 
 </html>
