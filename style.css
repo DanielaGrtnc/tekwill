@@ -1,0 +1,30 @@
+.submit_button {
+    color: white;
+    background-color: blue;
+}
+
+#page-title {
+    color: rgb(5, 244, 165);
+    background-color: rgb(216, 216, 168);
+}
+
+p {
+    font-size: 16px;
+}
+
+a:hover {
+    color: rgb(250, 162, 180);
+}
+a::before {
+    content: "★";
+}
+
+h3::after {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid black;
+}
+
+h1 {
+    background-color: rgb(8, 131, 231);
+}
