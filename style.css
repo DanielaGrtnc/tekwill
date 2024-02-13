@@ -7,11 +7,18 @@ body {
 
 section {
    background-color: #9ca6b0;
-   width: 200px;
+   /* width: 12.5rem; */
+   width: 50vw;
+   height: 50vh;
 }
 
 input {
-   height: 24px;
+   height: 2rem; /*32px = 2 * 16px* "rem"/
+   /* font-size: 10px; (2em = 2 * font-size); 2em = 20px "em" */
+   /* padding: 0.5em; */
+   /* margin: 0.5em; */
+   width: 50% ;
+
 }
 
 /* class selector */
@@ -78,6 +85,10 @@ li:last-child {
 li:nth-child(odd) {
    margin-bottom: 20px;
    font-size: 24px;
+}
+
+li {
+    display: inline; /*una dupa alta*/
 }
 
 body {
