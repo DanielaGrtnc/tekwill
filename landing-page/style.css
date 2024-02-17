@@ -13,12 +13,12 @@ a{
    .nav-main .nav-item {
          font-size: 16px;
          font-weight: 600;
-         color: #000;
+         color: white;
    }
    
-   .nav-main{
+   .nav-main {
        float: right;
-       color: #111010;
+       color: white;
        display: flex;
        gap: 20px;
    }
@@ -32,15 +32,16 @@ a{
    
    .registration {
        display: flex;
-       width: 328px;
+       width: 200px;
        padding: 40px;
        flex-direction: column;
        align-items: center;
-       gap: 20px;
+       gap: 40px;
        border-radius: 20px;
-       background: #ffffff63;
+       background: white;
        float: right;
-   }
+       color: black;
+   } 
    
    .registration .appointment-form {
        display: flex;
@@ -48,6 +49,26 @@ a{
        gap: 4px;
    }
    
+   .action-btn {
+    margin-top: 40px;
+    padding: 15px 40px;
+    border-radius: 20px;
+    background:  #FFA62B;
+    border: 1;
+    border-color: #FFA62B ;
+    color: white;
+   }
+
+   .learn-more-btn {
+    margin-top: 40px;
+    padding: 15px 40px;
+    border-radius: 20px;
+    background:  transparent;
+    border: 1;
+    border-color: white;
+    color: white;
+   }
+
    .submit-appointment {
        margin-top: 40px;
        padding: 15px 40px;
@@ -57,13 +78,16 @@ a{
    }
    
    body {
-        margin: 0;
-       background-image: url('background-photo.png');
+       margin: 0;
+       background-image: url('./images/background-photo.png');
+       background-image: linear-gradient(rgba(128, 128, 128, 0.7), rgba(128, 128, 128, 0.7)), url(./images/background-photo.png);
        background-size: cover;
        background-position: center top;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      color: #111010;
+      color: white;
       width: 100%;
       height: 880px;
    }
+
+   
