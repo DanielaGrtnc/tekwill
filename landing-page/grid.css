@@ -1,0 +1,34 @@
+body {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* fr- fraction */
+    /* grid-template-columns: 1fr 1fr 1fr (nu are sens)*/
+    /* grid-template-colums:repeat (6, 1fr) (asa mai bine) */
+    /* minmax(min,max)- valoarea sa fie egala sau mai mare decat mic si mai mica sau egala decat max, x apartine [2,9] */
+    /* grid-template-rows: 150px 150px 150px; */
+    /* grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer"; */
+}
+
+div {
+    background-color: #edd48a;
+    border-radius: 18px;
+    min-height: 100px;
+    min-width: 100px;
+
+}
+
+.header {
+    /* grid-area: header; */
+    background-color: red;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
