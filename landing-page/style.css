@@ -1,3 +1,18 @@
+:root {
+    --padding-small: 8px;
+    --padding-medium: 16px;
+    --padding-large: 24px;
+
+    --border-small: 4px;
+    --border-medium: 12px;
+    --border-large: 20px;
+
+    --gap-size: 20px;
+
+    --primary-color: #FFA62B;
+
+}
+
 a{
     text-decoration: none;
    }
@@ -20,7 +35,7 @@ a{
        float: right;
        color: white;
        display: flex;
-       gap: 20px;
+       gap: var(--gap-size);
    }
    
    section#home-screen {
@@ -32,11 +47,11 @@ a{
    
    .registration {
        display: flex;
-       width: 200px;
        padding: 40px;
+       max-width: 400px;
        flex-direction: column;
        align-items: center;
-       gap: 40px;
+       gap: var(--gap-size);
        border-radius: 20px;
        background: white;
        float: right;
@@ -46,27 +61,25 @@ a{
    .registration .appointment-form {
        display: flex;
        flex-direction: column;
-       gap: 4px;
+       gap: var(--gap-size);
    }
 
-
-    
    .action-btn {
     margin-right: 20px;
     margin-top: 40px;
     padding: 15px 40px;
     border-radius: 20px;
-    background:  #FFA62B;
+    background: var(--primary-color);
     border: 1;
     border-style: solid;
-    border-color: #FFA62B ;
+    border-color: var(--primary-color) ;
     color: white;
    }
 
    .learn-more-btn {
     margin-top: 40px;
     padding: 15px 40px;
-    border-radius: 20px;
+    border-radius: var(--border-large);
     background:  transparent;
     border: 1;
     border-style: solid;
@@ -76,9 +89,9 @@ a{
 
    .submit-appointment {
        margin-top: 40px;
-       padding: 15px 40px;
-       border-radius: 5px;
-       background:  #FFA62B;
+       padding: 16px 40px;
+       border-radius: var(--border-small);
+       background: var(--primary-color);
        border: 0;
    }
    
@@ -92,11 +105,39 @@ a{
       background-attachment: fixed;
       color: white;
       width: 100%;
-      height: 880px;
       font-family: Montserrat;
       font-weight: 900;
-      font-style: extrabold 900;
    }
 
+   @media (max-width: 768px) {
+    .nav-item {
+        display: none;
+    }
+    section#home-screen {
+        flex-direction: column;
+    }
+    .title-container {
+        text-align: center;
+        max-width: 400px;
+        margin-bottom: 40px;
+
+    }
+
+    /* .title-container,
+.registration {
+    min-width: 400px; */
+
+   }
+
+   @media (max-width: 480px) {
+.title-container,
+.registration {
+    min-width: 220px;
+}
+   }
+
+
+
+ 
 
    
