@@ -206,7 +206,25 @@ a{
     gap: 30px;
    }
 
+   @media (max-width: 768px) {
 
+    .web-container, .national-container, .digital-container {
+        flex-direction: column;
+    }
+    .title, .title-2 {
+        text-align: center;
+        max-width: 768px;
+        margin-bottom: 40px;
+    }
+   }
+
+   @media (max-width: 480px) {
+    .all-containers {
+    min-width: 220px;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+   }
 
  
 
