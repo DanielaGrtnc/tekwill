@@ -559,21 +559,105 @@ a{
         color: #ffffff;
     }
 
-    footer {
-        /* width: 80%; */
+    /* footer {
+        width: 80%;
         margin: 0 auto;
         background-color: #252B42;
         display: flex;
         gap: 60px;
-    }
+    } */
     
-    footer div {
+    /* footer div {
         display: flex;
         flex-direction: column;
         gap: 12px;
         color: #ffffff;
+    } */
+
+    section#nav-footer {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        background-color: #252B42;
+    }
+    section#footer {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        background-color: #252B42;
     }
 
+    .footer-logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-logo h3 {
+        color: white;
+        
+    
+    }
+    
+    .nav-bar-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+    }
+    
+    .footer-nav {
+        display: flex;
+        gap: 30px;
+        color: white;
+        padding-bottom: 20px;
+    }
+    
+    .footer-col{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .footer-col ul,a {
+        color: #BDBDBD;
+        list-style-type: none;
+        padding: 0;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        gap: 10px;
+        cursor: pointer;
+    }
+    
+    .footer-form {
+        border-radius: 5px;
+    }
+    
+    .footer-form input {
+        padding-right: 120px;
+    }
+    
+    .subscribe-btn {
+        border-radius: 0px 5px 5px 0px;
+        border: 1px solid #E6E6E6;
+        background: #FFA62B;
+        display: flex;
+        padding: 3px 22px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        color: white;
+    }
+    
+    .footer-col p {
+        color: #BDBDBD;
+        margin-top: 7px;
+    }
    
    
 
