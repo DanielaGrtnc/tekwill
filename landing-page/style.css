@@ -645,7 +645,7 @@ a{
         border: 1px solid #E6E6E6;
         background: #FFA62B;
         display: flex;
-        padding: 3px 22px;
+        padding: 3 px 22px;
         justify-content: center;
         align-items: center;
         position: absolute;
